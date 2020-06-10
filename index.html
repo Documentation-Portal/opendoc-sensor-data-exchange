@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Import for documentation portal styles -->
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/@docs-gov-sg/doc-theme-default/public/dist/doc.css"
+    />
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <script>
+      window.$docsify = {
+        name: "My Documentation", // Must configure when publishing
+        loadSidebar: true,
+        hideSidebar: false, // Configurable when publishing
+        basePath: "", // Configurable when publishing
+        homepage: "README.md", // Configurable when publishing
+        coverpage: false, // Configurable when publishing
+        onlyCover: false, // Configurable when publishing
+        // relativePath: true,
+        el: "#app",
+        auto2top: true,
+        subMaxLevel: 2, // For automatic 2nd level headings
+        themeColor: "#0076d6",
+      };
+    </script>
+
+    <!-- Imports for documentation functionality on documentation portal  -->
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  </body>
+</html>
